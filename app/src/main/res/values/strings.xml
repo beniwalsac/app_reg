@@ -8,5 +8,9 @@
     <string name="number1">Entry number of the first member</string>
     <string name="number2">Entry number of the second member</string>
     <string name="number3">Entry number of the third member</string>
-    <string name="button_login">Login</string>
+    <string name="button_register">Register</string>
+    <string name="title_activity_success_display">SuccessDisplay</string>
+    <string name="title_activity_failure_display">FailureDisplay</string>
+    <string name="show_message">There is something wrong.</string>
+    <string name="show_message1">You have successfully registered your team.</string>
 </resources>

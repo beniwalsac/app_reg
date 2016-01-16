@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="aurora.teamcop">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,6 +19,24 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".SuccessDisplay"
+            android:label="@string/title_activity_success_display"
+            android:parentActivityName=".Login"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aurora.teamcop.Login" />
+        </activity>
+        <activity
+            android:name=".FailureDisplay"
+            android:label="@string/title_activity_failure_display"
+            android:parentActivityName=".Login"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aurora.teamcop.Login" />
         </activity>
     </application>
 

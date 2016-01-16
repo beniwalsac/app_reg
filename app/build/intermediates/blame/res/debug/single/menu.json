@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\beniw\\AndroidStudioProjects\\TeamCOP\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_login.xml",
-        "source": "C:\\Users\\beniw\\AndroidStudioProjects\\TeamCOP\\app\\src\\main\\res\\menu\\menu_login.xml"
+        "merged": "E:\\Team COP\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_login.xml",
+        "source": "E:\\Team COP\\app\\src\\main\\res\\menu\\menu_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\beniw\\AndroidStudioProjects\\Team COP\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_login.xml",
+        "source": "C:\\Users\\beniw\\AndroidStudioProjects\\Team COP\\app\\src\\main\\res\\menu\\menu_login.xml"
     }
 ]
