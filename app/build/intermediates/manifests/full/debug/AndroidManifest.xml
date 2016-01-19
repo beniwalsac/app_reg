@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -19,12 +19,11 @@
         <activity
             android:name="aurora.teamcop.Login"
             android:label="@string/app_name"
+            android:parentActivityName="aurora.teamcop.WelcomePage"
             android:theme="@style/AppTheme.NoActionBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aurora.teamcop.WelcomePage" />
         </activity>
         <activity
             android:name="aurora.teamcop.SuccessDisplay"
@@ -33,7 +32,7 @@
             android:theme="@style/AppTheme.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="aurora.teamcop.Login" />
+                android:value="aurora.teamcop.WelcomePage" />
         </activity>
         <activity
             android:name="aurora.teamcop.FailureDisplay"
@@ -42,7 +41,25 @@
             android:theme="@style/AppTheme.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="aurora.teamcop.Login" />
+                android:value="aurora.teamcop.WelcomePage" />
+        </activity>
+        <activity
+            android:name="aurora.teamcop.WelcomePage"
+            android:label="COP Registration" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="aurora.teamcop.AboutPage"
+            android:parentActivityName="aurora.teamcop.WelcomePage"
+            android:theme="@style/AppTheme.NoActionBar" >
+>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aurora.teamcop.WelcomePage" />
         </activity>
     </application>
 

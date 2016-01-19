@@ -88,6 +88,10 @@
         "source": "C:\\Users\\beniw\\AndroidStudioProjects\\Team COP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\layout\\design_navigation_item.xml"
     },
     {
+        "merged": "C:\\Users\\beniw\\AndroidStudioProjects\\Team COP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_welcome_page.xml",
+        "source": "C:\\Users\\beniw\\AndroidStudioProjects\\Team COP\\app\\src\\main\\res\\layout\\activity_welcome_page.xml"
+    },
+    {
         "merged": "C:\\Users\\beniw\\AndroidStudioProjects\\Team COP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_success_display.xml",
         "source": "C:\\Users\\beniw\\AndroidStudioProjects\\Team COP\\app\\src\\main\\res\\layout\\content_success_display.xml"
     },
@@ -378,6 +382,10 @@
     {
         "merged": "C:\\Users\\beniw\\AndroidStudioProjects\\Team COP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
         "source": "C:\\Users\\beniw\\AndroidStudioProjects\\Team COP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\beniw\\AndroidStudioProjects\\Team COP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about_page.xml",
+        "source": "C:\\Users\\beniw\\AndroidStudioProjects\\Team COP\\app\\src\\main\\res\\layout\\activity_about_page.xml"
     },
     {
         "merged": "C:\\Users\\beniw\\AndroidStudioProjects\\Team COP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
