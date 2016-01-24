@@ -21,6 +21,7 @@ public class SuccessDisplay extends AppCompatActivity {
         home = (Button) findViewById(R.id.home);
     }
 
+    //lets you go back to the home page
     public void OnClick(View view) {
         if (view == home) {
             Intent intent = new Intent(this, WelcomePage.class);

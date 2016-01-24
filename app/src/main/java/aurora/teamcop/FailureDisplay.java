@@ -19,6 +19,7 @@ public class FailureDisplay extends AppCompatActivity {
 
     }
 
+    //try again button lets you go back to the welcome page
     public void OnClick(View view) {
         if(view == try_again) {
             Intent intent = new Intent(this, WelcomePage.class);

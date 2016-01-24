@@ -5,7 +5,7 @@
     android:layout_height = "fill_parent"
     android:scrollbars = "none"
     android:layout_weight="1"
-    android:background="#6626f926">
+    android:background="#168aa4">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="600dp"
@@ -15,14 +15,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="aurora.teamcop.AboutPage"
-    android:weightSum="1"
-    android:theme="@android:style/Animation">
+    android:weightSum="1">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:textColor="#000000"
+        android:textColor="#ffffff"
         android:text="@string/cop"
         android:textSize="20sp"/>
 
@@ -33,12 +32,13 @@
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:textSize="20sp"
+        android:textColor="#ffffff"
         android:onClick="OnClick"
         android:text="@string/webpage"
         android:focusable="false"
         android:elegantTextHeight="false"
-        android:background="#d50c4ed1"
-        android:backgroundTint="#d51f1f" />
+        android:background="#c312eda0"
+        android:backgroundTint="#cea8ea25" />
 
 
 </LinearLayout>

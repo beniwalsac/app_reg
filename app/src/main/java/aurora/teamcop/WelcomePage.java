@@ -10,6 +10,7 @@ public class WelcomePage extends AppCompatActivity {
 
     private Button Login;
     private Button About;
+    private Button Quit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,8 +19,9 @@ public class WelcomePage extends AppCompatActivity {
 
         Login = (Button) findViewById(R.id.login_page);
         About = (Button) findViewById(R.id.about);
+        Quit = (Button) findViewById(R.id.exit);
     }
-
+    //action for the two buttons
     public void OnClick(View view) {
         if (view == Login) {
             Intent intent = new Intent(this, Login.class);
@@ -28,6 +30,9 @@ public class WelcomePage extends AppCompatActivity {
         if (view == About) {
             Intent intent = new Intent(this, AboutPage.class);
             startActivity(intent);
+        }
+        if (view == Quit) {
+            finish();
         }
     }
 

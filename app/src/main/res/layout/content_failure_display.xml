@@ -24,7 +24,7 @@
         android:layout_width="250dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:textColor="#33b5e5"
+        android:textColor="#ffffff"
         android:text="@string/show_message"
         android:textSize="50sp"/>
 

@@ -280,6 +280,7 @@
     <string name="cop">This app has been designed to register teams for the course COP290 offered by the Department of Computer Science and Engineering, IIT Delhi.\nThe design team includes:\nAryan Garg\nGurtej Sohi\nSachin Beniwal\nThe course coordinator is Prof.Vinay Ribeiro. For more information about the course visit the course webpage. </string>
     <string name="dummy_button">Register </string>
     <string name="dummy_content">Registration\nfor COP290</string>
+    <string name="exit">Quit</string>
     <string name="home">Home</string>
     <string name="member1">Name of the first member</string>
     <string name="member2">Name of the second member</string>

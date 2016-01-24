@@ -20,6 +20,7 @@ public class AboutPage extends AppCompatActivity {
         towebpage = (Button) findViewById(R.id.webpage);
     }
 
+    //OnClick attribute sends a request to another app to go to the course web page
     public void OnClick(View view) {
         if (view == towebpage) {
             Uri url = Uri.parse("https://docs.google.com/document/d/1UDYSaeB0RJVeDF-_ZYYH_Zi9Gl9iqICKlaO1-wf4mNg/pub");

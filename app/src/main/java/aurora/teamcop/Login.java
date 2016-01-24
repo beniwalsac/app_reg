@@ -20,6 +20,8 @@ import com.android.volley.toolbox.Volley;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Login extends AppCompatActivity implements View.OnClickListener {
 
@@ -27,6 +29,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     * https://www.simplifiedcoding.net/android-studio-volley-tutorial-to-create-a-login-application/
     * https://developer.android.com/training/volley/simple.html*/
 
+    //various parameters for the hashmap of the post request
     private static final String server_url = "http://agni.iitd.ernet.in/cop290/assign0/register/";
     public static final String Key_name_team = "teamname";
     public static final String Key_number_1 = "entry1";
@@ -76,6 +79,49 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         final String number_2 = eT_number_2.getText().toString().trim();
         final String number_3 = eT_number_3.getText().toString().trim();
 
+        //use of regular expressions for input validation
+        Pattern entry_num = Pattern.compile("^201[0-4][A-Za-z]{2}[1-7][0][0-9]{3}$");
+        Pattern name = Pattern.compile("^[A-Za-z][a-z ]*$");
+        Pattern name3 = Pattern.compile("^$");
+        Pattern num3 = Pattern.compile("^$");
+        Pattern team_name = Pattern.compile("^$");
+        Matcher nameofteam = team_name.matcher(name_team);
+        Matcher first_name = name.matcher(name_1);
+        Matcher second_name = name.matcher(name_2);
+        Matcher third_name = name.matcher(name_3);
+        Matcher first_num = entry_num.matcher(number_1);
+        Matcher second_num = entry_num.matcher(number_2);
+        Matcher third_num = entry_num.matcher(number_3);
+        Matcher name3m = name3.matcher(name_3);
+        Matcher num3m = num3.matcher(number_3);
+
+        //generating a toast for an incorrect entry
+        if (nameofteam.matches()) {
+            Toast.makeText(Login.this, "Incorrect team name", Toast.LENGTH_LONG).show();
+            return;
+        }
+        else if(!first_name.matches()) {
+            Toast.makeText(Login.this, "Incorrect name of member 1", Toast.LENGTH_LONG).show();
+            return;
+        }
+        else if(!first_num.matches()) {
+            Toast.makeText(Login.this, "Incorrect entry number of member 1", Toast.LENGTH_LONG).show();
+            return;
+        }
+        else if(!second_name.matches()) {
+            Toast.makeText(Login.this, "Incorrect name of member 2", Toast.LENGTH_LONG).show();
+            return;
+        }
+        else if(!second_num.matches()) {
+            Toast.makeText(Login.this, "Incorrect entry number of member 2", Toast.LENGTH_LONG).show();
+            return;
+        }
+        else if(!(third_name.matches() & third_num.matches()) & (!(name3m.matches() & num3m.matches()))) {
+            Toast.makeText(Login.this, "Incorrect fields for member 3", Toast.LENGTH_LONG).show();
+            return;
+        }
+
+
         StringRequest stringRequest = new StringRequest(Request.Method.POST, server_url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -106,6 +152,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
     }
 
+    //getting the response and taking the required action
     private void showResponse(String json) {
         Intent intentS = new Intent(this, SuccessDisplay.class);
         Intent intentF = new Intent(this, FailureDisplay.class);
