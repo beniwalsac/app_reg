@@ -1,0 +1,146 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+\usetheme{CambridgeUS}
+
+
+
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Short title]{\Large{Team Registration App}} % The short title appears at the bottom of every slide, the full title is only on the title page
+\subtitle{COP 290}
+
+\author{Aryan Garg (2014CS10212) \\ \and Gurtej Singh Sohi (2014CS10220) \\ \and Sachin Beniwal (2014CS10250)} % Your name
+\institute[IIT] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+\large{IIT Delhi} \\ % Your institution for the title page
+\medskip
+\textit{} % Your email address
+}
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+%\begin{frame}
+%\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+%\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+%\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+%\section{First Section} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+%------------------------------------------------
+
+%\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+
+\begin{frame}
+\frametitle{\hspace{4cm}Basic UI and Features}
+\begin{itemize}
+\item First activity is App's home page which gives us three options which are as follows- 
+\begin{itemize}
+\item About page 
+\item Start Registration process  
+\item Exit the app.
+\end{itemize}
+\item About page  gives complete description of the App and the designing  team of the app. 
+ \\ *It also gives a link to the course homepage       
+ \item By clicking register button we go into login activity where we have linear layout of textviews and a button that sends data to the server and processes the response. 
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------ 
+\begin{frame}
+\frametitle{\hspace{4cm}Basic UI and Features}
+\begin{itemize}
+\item On clicking Register Button in Login Activity
+\begin{itemize}
+\item If your team has been successfully registered it goes to success activity where it gives an option to go to home page if you want to register again or exit the app.
+\item If your team doesn't get registered it goes to failure activity where you get a button to try again,pressing which you reach home page.
+\end{itemize}
+ \item Scroll view has been used which avoids cutting of page when changed from portrait to landscape mode.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{ \hspace{4.5cm}Errors Handled }
+\begin{itemize}
+\item If any of mandatory fields is left empty. 
+\item A  member's name cannot have a number in it. 
+\item Many errors are handled in the case of Entry No like-
+\begin{itemize}
+\item It can be From Year 2010 to 2014.
+\item Department code can be both uppercase or lowercase alphabets.
+\item Next Digit Which Specifies Btech/Dual Degree can be from 1-7.
+\item Next digit can only be 0.
+\item It has to followed by 3 Digits from 0-9.
+\end{itemize}
+\item If only one of the two fields for member 3 is filled.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{\hspace{3.5cm}High Level Functions Used}
+\begin{block}{parseJSON}
+This function takes Json response and parses it to get the response message and response success.
+\end{block}
+
+\begin{block}{registerTeam}
+It is called when you press register button in login activity where it checks input and sends data by making a string request and returning a hashmap as a parameter, after this it receives Json response which is processed by parseJson and shown by  showResponse function.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{\hspace{4.5cm}References}
+\begin{itemize}
+\item http://developer.android.com/training/volley/index.html
+\item https://www.simplifiedcoding.net/
+\item https://www.overleaf.com
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+
+\end{document} 
