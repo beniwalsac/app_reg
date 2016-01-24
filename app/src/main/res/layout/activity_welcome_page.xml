@@ -1,0 +1,68 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width = "fill_parent"
+    android:layout_height = "fill_parent"
+    android:scrollbars = "none"
+    android:layout_weight="1"
+    android:background="@color/black_overlay">
+
+    <LinearLayout
+    android:id="@+id/fullscreen_content_controls"
+    style="?metaButtonBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/dummy_content"
+        android:textColor="#fcfbfb"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/login_page"
+        style="?metaButtonBarButtonStyle"
+        android:layout_marginTop="0dp"
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:layout_height="60dp"
+        android:onClick="OnClick"
+        android:textColor="#ffffff"
+        android:background="#66000000"
+        android:text="@string/dummy_button"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/about"
+        style="?metaButtonBarButtonStyle"
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:onClick="OnClick"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:background="#66000000"
+        android:text="@string/about"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/exit"
+        style="?metaButtonBarButtonStyle"
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:onClick="OnClick"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:background="#66000000"
+        android:text="@string/exit"
+        android:textSize="20sp"/>
+
+</LinearLayout>
+</ScrollView>
